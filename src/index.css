@@ -402,3 +402,123 @@ a {
     min-width: 0;
   }
 }
+
+.full-gate-needs-practice {
+  border-color: rgba(216, 27, 96, 0.5);
+}
+
+.full-gate-needs-practice .full-gate-icon {
+  background: var(--raspberry-soft);
+  color: var(--raspberry);
+}
+
+.full-gate-almost-ready {
+  border-color: rgba(245, 158, 11, 0.45);
+  box-shadow:
+    0 18px 45px rgba(245, 158, 11, 0.12),
+    0 16px 40px rgba(17, 24, 39, 0.08);
+}
+
+.full-gate-almost-ready .full-gate-icon {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.full-gate-castle-open {
+  border-color: rgba(34, 197, 94, 0.5);
+  box-shadow:
+    0 18px 45px rgba(34, 197, 94, 0.2),
+    0 16px 40px rgba(17, 24, 39, 0.08);
+}
+
+.full-gate-castle-open .full-gate-icon {
+  background: var(--green);
+  color: white;
+}
+
+.dashboard-gate-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  background: var(--bg);
+  padding: 1rem;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dashboard-gate-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(17, 24, 39, 0.08);
+}
+
+.dashboard-gate-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background: white;
+  color: var(--text-muted);
+}
+
+.dashboard-gate-row h3 {
+  font-size: 1rem;
+  font-weight: 950;
+  color: var(--text-main);
+}
+
+.dashboard-gate-row p {
+  margin-top: 0.15rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.dashboard-gate-ready {
+  border-color: rgba(34, 197, 94, 0.35);
+}
+
+.dashboard-gate-ready .dashboard-gate-icon {
+  background: var(--green);
+  color: white;
+}
+
+.dashboard-gate-active {
+  border-color: rgba(216, 27, 96, 0.45);
+  background: white;
+  box-shadow: 0 16px 40px rgba(216, 27, 96, 0.12);
+}
+
+.dashboard-gate-active .dashboard-gate-icon {
+  background: var(--raspberry);
+  color: white;
+}
+
+.dashboard-gate-almost-ready {
+  border-color: rgba(245, 158, 11, 0.45);
+}
+
+.dashboard-gate-almost-ready .dashboard-gate-icon {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.dashboard-gate-needs-practice {
+  border-color: rgba(216, 27, 96, 0.35);
+}
+
+.dashboard-gate-needs-practice .dashboard-gate-icon {
+  background: var(--raspberry-soft);
+  color: var(--raspberry);
+}
+
+.dashboard-gate-locked {
+  opacity: 0.7;
+}
